@@ -1,4 +1,4 @@
-{% set version = '0.4.29' %}
+{% set version = "0.5.1" %}
 {% set posix = 'm2-' if win else '' %}
 {% set native = 'm2w64-' if win else '' %}
 
@@ -10,11 +10,11 @@ source:
   url:
     - {{ cran_mirror }}/src/contrib/readJDX_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/readJDX/readJDX_{{ version }}.tar.gz
-  sha256: 181defa28626b3bfdfa596b5d46c29a10eb16b3d061f5cd6090e0b8b3ca3c843
+  sha256: 7282bc1445c628c4b05d03d88c8d5d87a113e6df5469dcb0dc1b104d0819d1fd
 
 build:
-  merge_build_host: True  # [win]
-  number: 1
+  merge_build_host: true  # [win]
+  number: 0
   noarch: generic
   rpaths:
     - lib/R/lib/
@@ -37,14 +37,11 @@ test:
 
 about:
   home: https://github.com/bryanhanson/readJDX
-  license: GPL-3
-  summary: Import data written in the JCAMP-DX format. This is an instrument-independent format
-    used in the field of spectroscopy. Examples include IR, NMR, and Raman spectroscopy.
-    See the vignette for background and supported formats.  The official JCAMP-DX site
-    is <http://www.jcamp-dx.org/>.
+  license: GPL-3.0-or-later
+  summary: Import data written in the JCAMP-DX format. This is an instrument-independent format used in the field of spectroscopy. Examples include IR, NMR, and Raman spectroscopy. See the vignette for background and supported formats.  The official JCAMP-DX site is <http://www.jcamp-dx.org/>.
   license_family: GPL3
   license_file:
-    - '{{ environ["PREFIX"] }}/lib/R/share/licenses/GPL-3'
+    - {{ environ["PREFIX"] }}/lib/R/share/licenses/GPL-3
 
 extra:
   recipe-maintainers:
