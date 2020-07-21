@@ -3,7 +3,7 @@ About r-readjdx
 
 Home: https://github.com/bryanhanson/readJDX
 
-Package license: GPL-3
+Package license: GPL-3.0-or-later
 
 Feedstock license: BSD-3-Clause
 
