@@ -1,4 +1,4 @@
-{% set version = "0.5.1" %}
+{% set version = "0.5.36" %}
 {% set posix = 'm2-' if win else '' %}
 {% set native = 'm2w64-' if win else '' %}
 
@@ -10,7 +10,7 @@ source:
   url:
     - {{ cran_mirror }}/src/contrib/readJDX_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/readJDX/readJDX_{{ version }}.tar.gz
-  sha256: 7282bc1445c628c4b05d03d88c8d5d87a113e6df5469dcb0dc1b104d0819d1fd
+  sha256: 86992d7614de6b5b0650cd0d4a63a438b344b032aa1a4b5dc8586b5d81424b3d
 
 build:
   merge_build_host: true  # [win]
