@@ -1,11 +1,11 @@
-About r-readjdx
-===============
+About r-readjdx-feedstock
+=========================
+
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/r-readjdx-feedstock/blob/main/LICENSE.txt)
 
 Home: https://github.com/bryanhanson/readJDX
 
 Package license: GPL-3.0-or-later
-
-Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/r-readjdx-feedstock/blob/main/LICENSE.txt)
 
 Summary: Import data written in the JCAMP-DX format. This is an instrument-independent format used in the field of spectroscopy. Examples include IR, NMR, and Raman spectroscopy. See the vignette for background and supported formats.  The official JCAMP-DX site is <http://www.jcamp-dx.org/>.
 
